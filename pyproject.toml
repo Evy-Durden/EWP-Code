@@ -1,8 +1,12 @@
 [project]
 name = "linux-analyzer"
 version = "0.1.0"
-dependencies = ["click"]
+description = "Misconfiguration scanner for Linux"
+dependencies = [
+	"typer"
+]
 
 [project.scripts]
 linux-analyzer = "linux_analyzer.cli:cli"
+
 
