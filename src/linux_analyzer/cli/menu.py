@@ -14,3 +14,5 @@ def show_menu():
 		info("You have chosen the behavioral mode.")
 	elif flags["mode"] == "full":
 		info("You have chosen the full mode.")
+		
+	return flags

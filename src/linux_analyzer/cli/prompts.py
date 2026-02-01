@@ -1,8 +1,8 @@
-from typing import TypedDict
+from typing import TypedDict, Literal
 
 # using a typed dictionary to manage the flags
 class PromptResult(TypedDict):
-    mode: str
+    mode: Literal["static", "behavioral", "full"]
     cve: bool
     report: bool
 
