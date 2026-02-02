@@ -1,7 +1,7 @@
 from dataclasses import dataclass
 from typing import Optional, Literal
 
-@dataclass
+@dataclass(frozen=True)
 class ExecutionContext:
 	"""
 	This class harbours all the information to give the execution context.

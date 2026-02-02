@@ -1,7 +1,7 @@
 import typer
 from .menu import show_menu
 from linux_analyzer.core.context import ExecutionContext
-# from linux_analyzer.core.orchestrator import run
+from linux_analyzer.core.orchestrator import run
 
 # creating a typer app
 app = typer.Typer()
@@ -23,7 +23,7 @@ def main():
 		generate_report = flags["report"]
 	)
 	
-	# run(context)
+	run(context)
 	
 # ensure that code is only run when script is executed and not when it is imported
 if __name__ == "__main__":
