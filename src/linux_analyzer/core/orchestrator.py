@@ -1,5 +1,5 @@
 from linux_analyzer.core.context import ExecutionContext
-from linux_analyzer.core.pipeline import run_pipeline
+from linux_analyzer.core.pipeline import AnalysisPipeline
 
 def run(context: ExecutionContext) -> None:
     """

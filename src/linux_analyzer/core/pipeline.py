@@ -1,8 +1,8 @@
 # core/pipeline/static_pipeline.py
 from typing import List
-from core.models import Finding
-from core.context import ExecutionContext
-from core.ports.analysis import AnalysisStrategy
+from linux_analyzer.core.models import Finding
+from linux_analyzer.core.context import ExecutionContext
+from linux_analyzer.ports.analysis import AnalysisStrategy
 
 class AnalysisPipeline:
   def __init__(self, strategies: list[AnalysisStrategy]):
